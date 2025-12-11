@@ -587,12 +587,12 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 
 
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right {}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(1) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 69px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(2) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 69px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(3) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 69px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(4) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 69px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(5) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 69px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(6) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 69px; padding: 16px 0; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(1) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 100px; padding: 16px 0; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(2) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 35px; padding: 16px 0; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(3) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 100px; padding: 16px 0; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(4) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 35px; padding: 16px 0; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(5) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 100px; padding: 16px 0; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(6) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; line-height: 35px; padding: 16px 0; color: #B3626E;}
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(7) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; padding: 0; color: #B3626E; margin-bottom: 10px;}
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(8) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; padding: 0; color: #B3626E; margin-bottom: 10px;}
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(9) {font-family: 'Aritaburi'; font-size: 20px; text-indent: 92px; padding: 0; color: #B3626E; margin-bottom: 10px;}
