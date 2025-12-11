@@ -43,9 +43,9 @@ header .header_box nav .gnb li:nth-child(3) .lnb li a:hover {font-size: 18px; co
 
 .hero_box .hero_inbox .hero_box_line {width: 290px; height: 1px; background: #C46F7B;}
 
-.hero_box .hero_inbox .hero_box_sec1 {font-family: 'Aritaburi'; font-size: 20px; font-weight: normal; line-height: 155%; margin-top: 10px; margin-bottom: 10px; margin-left: 40px; color: #414141;}
-.hero_box .hero_inbox .hero_box_sec2 {font-family: 'Aritaburi'; font-size: 18px; font-weight: normal; line-height: 155%; margin-top: 10px; margin-left: 40px; color: #414141;}
-.hero_box .hero_inbox .hero_more {font-family: 'Aritaburi'; font-size: 14px; width: 110px; height: 26px; background: #C46F7B; text-align: center; line-height: 26px; color: #fff; margin-top: 10px; margin-left: 90px;}
+.hero_box .hero_inbox .hero_box_sec1 {font-family: 'GounBatang'; font-size: 20px; font-weight: normal; line-height: 155%; margin-top: 10px; margin-bottom: 10px; margin-left: 40px; color: #414141;}
+.hero_box .hero_inbox .hero_box_sec2 {font-family: 'GounBatang'; font-size: 18px; font-weight: normal; line-height: 155%; margin-top: 10px; margin-left: 40px; color: #414141;}
+.hero_box .hero_inbox .hero_more {font-family: 'GounBatang'; font-size: 14px; width: 110px; height: 26px; background: #C46F7B; text-align: center; line-height: 26px; color: #fff; margin-top: 10px; margin-left: 90px;}
 .hero_box .hero_inbox .hero_more a {color: #fff;}
 
 /* 히어로 */
@@ -66,21 +66,21 @@ section .section1 .section1_box .section1_introduce .section1_ukymelar {}
 section .section1 .section1_box .section1_introduce .section1_ukymelar .ukymelar {font-size: 32px; color: #C46F7B;}
 section .section1 .section1_box .section1_introduce .section1_ukymelar .ukymelar li:nth-child(1) {font-size: 32px; color: #C46F7B;}
 section .section1 .section1_box .section1_introduce .section1_ukymelar .ukymelar li:nth-child(2) {font-size: 18px; color: #C46F7B;}
-section .section1 .section1_box .section1_introduce .section1_ukymelar .ukymelar li:nth-child(3) {font-size: 16px; font-family: 'Aritaburi'; color: #414141; line-height: 170%; margin-top: 15px;}
+section .section1 .section1_box .section1_introduce .section1_ukymelar .ukymelar li:nth-child(3) {font-size: 16px; font-family: 'GounBatang'; color: #414141; line-height: 170%; margin-top: 15px;}
 
 section .section1 .section1_box .section1_introduce .section1_insta {margin-top: 20px;}
-section .section1 .section1_box .section1_introduce .section1_insta .insta_info {font-family: 'Aritaburi'; font-size: 14px; color: #C46F7B; margin-bottom: 8px;}
+section .section1 .section1_box .section1_introduce .section1_insta .insta_info {font-family: 'GounBatang'; font-size: 14px; color: #C46F7B; margin-bottom: 8px;}
 section .section1 .section1_box .section1_introduce .section1_insta .instagram {display: flex;}
-section .section1 .section1_box .section1_introduce .section1_insta .instagram li {color: #C46F7B; font-family: 'Aritaburi'; font-size: 14px; display: flex; align-items: center;}
+section .section1 .section1_box .section1_introduce .section1_insta .instagram li {color: #C46F7B; font-family: 'GounBatang'; font-size: 14px; display: flex; align-items: center;}
 section .section1 .section1_box .section1_introduce .section1_insta .instagram li img {margin-right: 8px;}
 section .section1 .section1_box .section1_introduce .section1_insta .instagram li a {}
 section .section1 .section1_box .section1_introduce .section1_insta .instagram li:nth-child(1) {font-size: 15px; margin-right: 15px;}
 
-section .section1 .section1_box .section1_introduce .section1_insta .insta_info2 {font-family: 'Aritaburi'; font-size: 14px; color: #987070; margin-top: 20px; margin-bottom: 8px;}
+section .section1 .section1_box .section1_introduce .section1_insta .insta_info2 {font-family: 'GounBatang'; font-size: 14px; color: #987070; margin-top: 20px; margin-bottom: 8px;}
 section .section1 .section1_box .section1_introduce .section1_insta .insta_info2 a {}
 
 section .section1 .section1_box .section1_introduce .section1_insta .instagram2 {display: flex;}
-section .section1 .section1_box .section1_introduce .section1_insta .instagram2 li {color: #987070; font-family: 'Aritaburi'; font-size: 14px; display: flex; align-items: center;}
+section .section1 .section1_box .section1_introduce .section1_insta .instagram2 li {color: #987070; font-family: 'GounBatang'; font-size: 14px; display: flex; align-items: center;}
 section .section1 .section1_box .section1_introduce .section1_insta .instagram2 li img {margin-right: 8px;}
 section .section1 .section1_box .section1_introduce .section1_insta .instagram2 li a {}
 section .section1 .section1_box .section1_introduce .section1_insta .instagram2 li:nth-child(1) {font-size: 15px; margin-right: 15px;}
@@ -135,7 +135,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_section .sec3_inbox1_title {font-size: 20px; text-align: center; line-height: 20px; color: #fff;}
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_section .sec3_inbox1_title img {margin-left: 5px;}
 
-section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_section .sec3_inbox1_sec {font-size: 16px; line-height: 170%; font-family: 'Aritaburi'; margin-top: 15px; color: #fff;}
+section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_section .sec3_inbox1_sec {font-size: 16px; line-height: 170%; font-family: 'GounBatang'; margin-top: 15px; color: #fff;}
 
 
 /* inbox2 */
@@ -145,7 +145,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox2 .sec3_inbox1_section .sec3_inbox1_title {font-size: 20px; text-align: center; line-height: 20px; color: #CA7E89;}
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox2 .sec3_inbox1_section .sec3_inbox1_title img {margin-left: 5px;}
 
-section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox2 .sec3_inbox1_section .sec3_inbox1_sec {font-size: 16px; line-height: 170%; font-family: 'Aritaburi'; margin-top: 15px; color: #CA7E89;}
+section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox2 .sec3_inbox1_section .sec3_inbox1_sec {font-size: 16px; line-height: 170%; font-family: 'GounBatang'; margin-top: 15px; color: #CA7E89;}
 
 
 /* inbox3 */
@@ -155,7 +155,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox3 .sec3_inbox1_section .sec3_inbox1_title {font-size: 20px; text-align: center; line-height: 20px; color: #fff;}
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox3 .sec3_inbox1_section .sec3_inbox1_title img {margin-left: 5px;}
 
-section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox3 .sec3_inbox1_section .sec3_inbox1_sec {font-size: 16px; line-height: 170%; font-family: 'Aritaburi'; margin-top: 15px; color: #fff;}
+section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox3 .sec3_inbox1_section .sec3_inbox1_sec {font-size: 16px; line-height: 170%; font-family: 'GounBatang'; margin-top: 15px; color: #fff;}
 
 
 
@@ -165,7 +165,7 @@ footer .footer_box {width: 1120px; height: 106px; display: flex; justify-content
 footer .footer_box .footer_inbox {width: 290px;}
 footer .footer_box .footer_inbox h1 {width: 132px; height: 25px;}
 footer .footer_box .footer_inbox h1 img {}
-footer .footer_box p {font-family: 'Aritaburi'; font-size: 14px; color: #fff; line-height: 160%; margin-top: 12px;}
+footer .footer_box p {font-family: 'GounBatang'; font-size: 14px; color: #fff; line-height: 160%; margin-top: 12px;}
 
 footer .footer_box .footer_inbox2 {display: flex; flex-direction: column; justify-content: center; align-items: end; height: 100px;}  
 footer .footer_box .footer_inbox2 .footer_iconbox {display: flex; justify-content: end; gap: 10px;}

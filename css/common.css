@@ -43,7 +43,7 @@ footer .footer_box {width: 1120px; height: 106px; display: flex; justify-content
 footer .footer_box .footer_inbox {width: 290px;}
 footer .footer_box .footer_inbox h1 {width: 132px; height: 25px;}
 footer .footer_box .footer_inbox h1 img {}
-footer .footer_box p {font-family: 'Aritaburi'; font-size: 14px; color: #fff; line-height: 160%; margin-top: 12px;}
+footer .footer_box p {font-family: 'GounBatang'; font-size: 14px; color: #fff; line-height: 160%; margin-top: 12px;}
 
 footer .footer_box .footer_inbox2 {display: flex; flex-direction: column; justify-content: center; align-items: end; height: 100px;}  
 footer .footer_box .footer_inbox2 .footer_iconbox {display: flex; justify-content: end; gap: 10px;}
