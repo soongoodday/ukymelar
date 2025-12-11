@@ -570,6 +570,14 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 
 /* 섹션2 */
 .sub4 section .sub4_section2 {width: 1120px; margin: 0 auto; margin-top: 150px;}
+
+.sub4 section .sub4_section2 .sub4_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 220px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line2 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 320px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line3 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 420px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line4 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 520px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line5 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 620px; left: 20px;}
+
+.sub4 section .sub4_section2 .sub4_sample {}
 .sub4 section .sub4_section2 .sub4_sample .pricebox_title {width: 1120px; height: 56px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 56px; font-size: 26px; color: #fff; margin-bottom: 20px; border-radius: 5px;}
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox {width: 1120px; height: 716px; background: #F8F0F1; margin: 0 auto; border-radius: 5px; padding: 30px 0px; display: flex;}
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .samplebox_left {}
