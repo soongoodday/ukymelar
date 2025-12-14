@@ -1,21 +1,14 @@
-/* HS봄바람30 */
+/* 가나 초콜릿체 */
 @font-face {
-    font-family: 'HsBombaram30';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Thin.woff') format('woff');
-    font-weight: 100;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HsBombaram30';
-    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-family: 'GanaChocolate';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
     font-weight: normal;
     font-display: swap;
 }
 
 
 
-/* 고운바탕 */
+/* 고운바탕체 */
 @font-face {
     font-family: 'GounBatang';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');

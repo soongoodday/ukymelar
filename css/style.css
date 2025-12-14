@@ -343,16 +343,16 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 .sub3 section .sub3_section1 .sub3_section_pricebox .sub3_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 165px; left: 20px;}
 
 .sub3 section .sub3_section1 .sub3_section_pricebox {width: 1120px; height: 828px; margin: 0 auto;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_title {width: 1120px; height: 56px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 56px; font-size: 24px; color: #fff; margin-bottom: 20px; border-radius: 5px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_title {width: 1120px; height: 50px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 50px; font-size: 22px; color: #fff; margin-bottom: 20px; border-radius: 5px;}
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox {margin: 0 auto; display: flex; justify-content: space-between; gap: 20px;}
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 {width: 550px; height: 350px; background: #F8F0F1; margin: 0 auto; border-radius: 5px;}
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap {}
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li {}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(1) {font-size: 24px; color: #b3626e; text-align: center; margin-top: 30px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(2) {font-size: 26px; color: #b3626e; text-align: center; margin-top: 50px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(3) {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; margin-top: 30px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(4) {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; margin-top: 25px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(5) {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; margin-top: 25px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(1) {font-size: 22px; color: #b3626e; text-align: center; margin-top: 30px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(2) {font-size: 22px; color: #b3626e; text-align: center; margin-top: 50px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(3) {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; margin-top: 30px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(4) {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; margin-top: 25px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(5) {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; margin-top: 25px;}
 
 
 
@@ -361,11 +361,11 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap {}
 
 
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(1) {font-size: 24px; color: #b3626e; text-align: center; margin-top: 30px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(2) {font-size: 26px; color: #b3626e; text-align: center; margin-top: 50px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(3) {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; margin-top: 30px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(4) {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; margin-top: 25px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(5) {font-family: 'GounBatang'; font-size: 24px; color: #b3626e; text-align: center; margin-top: 25px; font-weight: bold;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(1) {font-size: 22px; color: #b3626e; text-align: center; margin-top: 30px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(2) {font-size: 22px; color: #b3626e; text-align: center; margin-top: 50px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(3) {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; margin-top: 30px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(4) {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; margin-top: 25px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(5) {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; margin-top: 25px; font-weight: bold;}
 
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap .snap_l {margin-right: 10px;}
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap .snap_r {margin-left: 10px;}
@@ -374,51 +374,53 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 
 
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox {margin-top: 20px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_title {font-size: 24px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; padding: 20px 0;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_list {padding: 20px 0; border-bottom: 1px solid #CA7E89;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_list li {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; line-height: 200%; padding: 0 20px;}
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_list .eventbox_ul {width: 8px; height: 8px; background: #b3626e; position: relative; left: -20px; top: 25px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_title {font-size: 22px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; height: 50px; line-height: 50px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_list {border-bottom: 1px solid #CA7E89; padding: 20px 0;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_list li {font-family: 'GounBatang'; font-size: 16px; color: #b3626e; line-height: 200%; padding: 0 20px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_list .eventbox_ul {width: 6px; height: 6px; background: #b3626e; position: relative; left: -20px; top: 20px;}
 
 
-.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_askbox {width: 1120px; height: 56px; background: #705c53; font-size: 22px; color: #fff; text-align: center; line-height: 56px; margin-top: 20px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_askbox {width: 1120px; height: 56px; background: #705c53; font-size: 20px; text-align: center; line-height: 56px; margin-top: 20px;}
 
+
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_askbox a {color: #fff;}
 
 
 /* 섹션2 */
 .sub3 section .sub3_section2 .sub3_section_box {margin-top: 150px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_title {width: 1120px; height: 56px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 56px; font-size: 24px; color: #fff; margin-bottom: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_title {width: 1120px; height: 50px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 50px; font-size: 22px; color: #fff; margin-bottom: 20px;}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company {width: 1120px; margin: 0 auto;}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_pic {display: flex; justify-content: center; gap: 20px;}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_hair {display: flex;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_hair .eventbox_title {font-size: 24px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; padding: 20px 0; margin: 20px 0; width: 560px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_hair .eventbox_title {font-size: 22px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; width: 560px; height: 50px; line-height: 50px; margin-top: 20px; margin-bottom: 20px;}
 
 
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section {}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 96px; left: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line2 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 245px; left: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line3 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 420px; left: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 96px; left: 590px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 94px; left: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line2 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 220px; left: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line3 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 380px; left: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 94px; left: 590px;}
 
 
 
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container {display: flex; gap: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 {height: 450px; background: #F8F0F1; width: 550px; border-radius: 5px; padding: 20px 0;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 {height: 400px; background: #F8F0F1; width: 550px; border-radius: 5px; padding: 20px 0;}
 
 
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 {}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; line-height: 170%;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; margin: 20px 0;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; line-height: 170%;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; margin: 20px 0;}
 
 
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 {}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_title {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; line-height: 170%;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; margin: 20px 0;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_title {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; line-height: 170%;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; margin: 20px 0;}
 
 
 
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 {}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_title {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; line-height: 170%;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; margin: 20px 0;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_title {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; line-height: 170%;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; margin: 20px 0;}
 
 
 
@@ -426,8 +428,8 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container {}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 {background: #F8F0F1; width: 550px; height: 140px; border-radius: 5px; padding: 20px 0;}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 {}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 20px; color: #b3626e; text-align: center; padding: 20px 0;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; padding: 30px 0;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 18px; color: #b3626e; text-align: center; padding: 20px 0;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; padding: 30px 0;}
 
 
 /* 이벤트박스 섹션2-1 */
@@ -435,7 +437,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 .sub3 section .sub3_section2-1 .pricebox_company {width: 1120px; margin: 0 auto;}
 .sub3 section .sub3_section2-1 .pricebox_company .pricebox_pic {display: flex; justify-content: center; gap: 20px;}
 .sub3 section .sub3_section2-1 .pricebox_company .pricebox_hair {display: flex;}
-.sub3 section .sub3_section2-1 .pricebox_company .pricebox_hair .eventbox_title {font-size: 24px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; padding: 20px 0; margin: 20px 0; width: 560px;}
+.sub3 section .sub3_section2-1 .pricebox_company .pricebox_hair .eventbox_title {font-size: 22px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; line-height: 22px; width: 560px;}
 
 
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section {}
@@ -449,19 +451,19 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 
 
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 {}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 24px; color: #b3626e; text-align: center; padding: 20px 0;}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; padding: 20px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 22px; color: #b3626e; text-align: center; padding: 20px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; padding: 20px 0;}
 
 
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 {}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_title {font-family: 'GounBatang'; font-size: 24px; color: #b3626e; text-align: center; padding: 20px 0;}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; padding: 20px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_title {font-family: 'GounBatang'; font-size: 22px; color: #b3626e; text-align: center; padding: 20px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; padding: 20px 0;}
 
 
 
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 {}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_title {font-family: 'GounBatang'; font-size: 24px; color: #b3626e; text-align: center; padding: 20px 0;}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; padding: 20px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_title {font-family: 'GounBatang'; font-size: 22px; color: #b3626e; text-align: center; padding: 20px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; padding: 20px 0;}
 
 
 
@@ -469,11 +471,11 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container {}
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 {background: #F8F0F1; width: 550px; height: 170px; border-radius: 5px; padding: 20px 0;}
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 {}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 24px; color: #b3626e; text-align: center; padding: 30px 0;}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_price {font-size: 26px; color: #b3626e; text-align: center; padding: 30px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_title {font-family: 'GounBatang'; font-size: 22px; color: #b3626e; text-align: center; padding: 30px 0;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_price {font-size: 22px; color: #b3626e; text-align: center; padding: 30px 0;}
 
 
-.sub3 section .sub3_section2-1 .pricebox_company .pricebox_askbox {width: 1120px; height: 56px; background: #705c53; font-size: 22px; color: #fff; text-align: center; line-height: 56px; margin: 0 auto; margin-top: 20px; margin-bottom: 200px;}
+.sub3 section .sub3_section2-1 .pricebox_company .pricebox_askbox {width: 1120px; height: 50px; background: #705c53; font-size: 20px; line-height: 20px; color: #fff; text-align: center; line-height: 50px; margin: 0 auto; margin-top: 20px; margin-bottom: 200px;}
 
 
 
@@ -608,3 +610,6 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 
 
 .sub4 section .sub4_section2 .pricebox_askbox {width: 1120px; height: 56px; background: #705c53; font-size: 22px; color: #fff; text-align: center; line-height: 56px; margin: 0 auto; margin-top: 20px; margin-bottom: 200px;}
+
+
+.sub4 section .sub4_section2 .pricebox_askbox a {color: #fff;}
