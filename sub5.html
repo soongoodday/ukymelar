@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유키멜라 ukymelar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="sub5">
+    <header>
+        <div class="back_color"></div>
+        <div class="header_box">
+            <h1><a href="index.html"><img src="images/ukymelar_logo.png" alt=""></a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub2.html"><img src="images/ukymelar_menu_object_left.png" alt="">
+                            포트폴리오<img src="images/ukymelar_menu_object_right.png" alt=""></a>
+                        <ul class="lnb">
+                            <li><a href="sub2.html">둘러보기</a></li>
+                            <li><a href="sub5.html">촬영후기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="images/ukymelar_menu_object_left.png" alt="">
+                            ukymelar<img src="images/ukymelar_menu_object_right.png" alt=""></a>
+                        <ul class="lnb">
+                            <li><a href="index.html">유키멜라 홈</a></li>
+                            <li><a href="sub1.html">유키멜라 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub3.html"><img src="images/ukymelar_menu_object_left.png" alt="">
+                            작업문의<img src="images/ukymelar_menu_object_right.png" alt=""></a>
+                        <ul class="lnb">
+                            <li><a href="sub3.html">스냅촬영</a></li>
+                            <li><a href="sub4.html">사진보정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="sub5_section1">
+            <div class="sub5_section_box">
+                <div class="sub5_section_inbox">
+                    <div class="sub5_section_inbox_title"><span class="s3left"><img src="images/section_object_left.png"
+                                alt=""></span>촬영후기<span class="s3right"><img src="images/section_object_right.png"
+                                alt=""></span></div>
+                    <div class="sub5_button">고객님들의 후기</div>
+                    <div class="sub5_section">촬영하신 소중한 순간과 후기를<br>
+                        자유롭게 남겨주세요.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review_list_section">
+            <div class="review_board">
+
+                <div class="review_list_header">
+                    <div class="review_list_title">고객님들의 후기</div>
+                    <button type="button" id="writeToggleBtn" class="write_toggle_btn">✏️ 후기 작성하기</button>
+                </div>
+
+                <div id="reviewWriteBox" class="review_write_box" style="display:none;">
+                    <div id="reviewWriteTitle" class="review_write_title">후기 남기기</div>
+                    <input type="text" id="reviewName" class="review_input_name" placeholder="이름 (닉네임)" maxlength="20">
+                    <input type="password" id="reviewPassword" class="review_input_name"
+                        placeholder="비밀번호 (수정·삭제 시 필요, 4자리 이상)" maxlength="20">
+                    <textarea id="reviewText" class="review_input_text" placeholder="촬영 후기를 자유롭게 남겨주세요 :)"
+                        maxlength="500"></textarea>
+                    <label for="reviewPhotos" class="review_photo_label">📷 사진 첨부 (최대 5장)</label>
+                    <input type="file" id="reviewPhotos" accept="image/*" multiple class="review_photo_input">
+                    <div id="photoPreview" class="review_photo_preview"></div>
+                    <div class="review_write_btns">
+                        <button type="button" id="reviewCancelBtn" class="review_cancel_btn">취소</button>
+                        <button type="button" id="reviewSubmitBtn" class="review_submit_btn">후기 등록하기</button>
+                    </div>
+                    <div id="reviewMsg" class="review_msg"></div>
+                </div>
+
+                <div id="reviewLoading" class="review_loading">
+                    <div class="loading_spinner"></div>
+                    후기를 불러오고 있어요
+                </div>
+                <div id="reviewEmpty" class="review_empty" style="display:none;">
+                    <div class="empty_icon">🤍</div>
+                    아직 등록된 후기가 없어요.<br>첫 후기를 남겨주시면 이 자리를 예쁘게 채워드릴게요!
+                </div>
+                <div id="reviewList" class="review_list"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_box">
+            <div class="footer_inbox">
+                <h1><img src="images/ukymelar_logo_white.png" alt=""></h1>
+                <p>개인정보관리책임자: 성경은(soongoodday@gmail.com)<br>
+                    Copyright ⓒ ukymelar. All rights reserved.
+                </p>
+            </div>
+            <div class="footer_inbox2">
+                <div class="footer_iconbox">
+                    <a href="http://pf.kakao.com/_XcByb" target="_blank"><img src="images/footer_kakaotalk.png"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/ukymelar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"><img src="images/footer_instagram.png" alt=""></a>
+                </div>
+                <p>국민은행 33535-00-457043<br>
+                    예금주 조유경</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+        import {
+            getFirestore, collection, addDoc, updateDoc, doc, getDocs, query, where, orderBy, limit, serverTimestamp
+        } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+
+        // 🔽 본인 값으로 교체
+        const firebaseConfig = {
+            apiKey: "AIzaSyAduKfh_51A45q10fSOwBj6RdqUsTaDWHc",
+            authDomain: "ukymelar-bd655.firebaseapp.com",
+            projectId: "ukymelar-bd655",
+            storageBucket: "ukymelar-bd655.firebasestorage.app",
+            messagingSenderId: "782766339016",
+            appId: "1:782766339016:web:e4801428cb6c2fdb4d06fd"
+        };
+        const CLOUDINARY_CLOUD_NAME = "dxknnm6n";
+        const CLOUDINARY_UPLOAD_PRESET = "ukymelar_review";
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        async function hashPassword(pw) {
+            const enc = new TextEncoder().encode(pw);
+            const buf = await crypto.subtle.digest("SHA-256", enc);
+            return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+        }
+
+        const writeToggleBtn = document.getElementById("writeToggleBtn");
+        const writeBox = document.getElementById("reviewWriteBox");
+        const writeTitle = document.getElementById("reviewWriteTitle");
+        const nameInput = document.getElementById("reviewName");
+        const passwordInput = document.getElementById("reviewPassword");
+        const textInput = document.getElementById("reviewText");
+        const photoInput = document.getElementById("reviewPhotos");
+        const photoPreview = document.getElementById("photoPreview");
+        const submitBtn = document.getElementById("reviewSubmitBtn");
+        const cancelBtn = document.getElementById("reviewCancelBtn");
+        const msgBox = document.getElementById("reviewMsg");
+        const listBox = document.getElementById("reviewList");
+        const loadingBox = document.getElementById("reviewLoading");
+        const emptyBox = document.getElementById("reviewEmpty");
+
+        const MAX_PHOTOS = 5;
+        let newFiles = [];
+        let keptPhotoUrls = [];
+        let editingId = null;
+        let editingHash = null;
+        let reviewCache = {};
+
+        writeToggleBtn.addEventListener("click", () => {
+            if (writeBox.style.display === "block") closeWriteBox();
+            else openWriteBox();
+        });
+        cancelBtn.addEventListener("click", closeWriteBox);
+
+        function openWriteBox() {
+            writeBox.style.display = "block";
+            writeToggleBtn.textContent = "닫기";
+            writeBox.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        function closeWriteBox() {
+            writeBox.style.display = "none";
+            writeToggleBtn.textContent = "✏️ 후기 작성하기";
+            resetForm();
+        }
+        function resetForm() {
+            editingId = null;
+            editingHash = null;
+            newFiles = [];
+            keptPhotoUrls = [];
+            nameInput.value = "";
+            passwordInput.value = "";
+            passwordInput.style.display = "block";
+            textInput.value = "";
+            photoInput.value = "";
+            photoPreview.innerHTML = "";
+            msgBox.textContent = "";
+            writeTitle.textContent = "후기 남기기";
+            submitBtn.textContent = "후기 등록하기";
+        }
+
+        photoInput.addEventListener("change", () => {
+            const room = MAX_PHOTOS - keptPhotoUrls.length;
+            newFiles = Array.from(photoInput.files).slice(0, Math.max(room, 0));
+            renderPhotoPreview();
+        });
+
+        function renderPhotoPreview() {
+            photoPreview.innerHTML = "";
+            keptPhotoUrls.forEach((url, idx) => {
+                const wrap = document.createElement("div");
+                wrap.className = "photo_thumb";
+                wrap.innerHTML = `<img src="${url}" alt=""><button type="button" class="photo_remove" data-kind="kept" data-idx="${idx}">×</button>`;
+                photoPreview.appendChild(wrap);
+            });
+            newFiles.forEach((file, idx) => {
+                const wrap = document.createElement("div");
+                wrap.className = "photo_thumb";
+                const img = document.createElement("img");
+                img.src = URL.createObjectURL(file);
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "photo_remove";
+                btn.dataset.kind = "new";
+                btn.dataset.idx = idx;
+                btn.textContent = "×";
+                wrap.appendChild(img);
+                wrap.appendChild(btn);
+                photoPreview.appendChild(wrap);
+            });
+        }
+
+        photoPreview.addEventListener("click", (e) => {
+            if (!e.target.classList.contains("photo_remove")) return;
+            const kind = e.target.dataset.kind;
+            const idx = Number(e.target.dataset.idx);
+            if (kind === "kept") keptPhotoUrls.splice(idx, 1);
+            else newFiles.splice(idx, 1);
+            renderPhotoPreview();
+        });
+
+        async function uploadToCloudinary(file) {
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+            const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`, {
+                method: "POST", body: formData
+            });
+            if (!res.ok) throw new Error("이미지 업로드 실패");
+            const data = await res.json();
+            return data.secure_url;
+        }
+
+        submitBtn.addEventListener("click", async () => {
+            const name = nameInput.value.trim();
+            const text = textInput.value.trim();
+
+            if (!name || !text) {
+                msgBox.textContent = "이름과 후기 내용을 입력해주세요.";
+                return;
+            }
+            if (!editingId) {
+                const pw = passwordInput.value.trim();
+                if (pw.length < 4) {
+                    msgBox.textContent = "비밀번호는 4자리 이상 입력해주세요.";
+                    return;
+                }
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "저장 중...";
+            msgBox.textContent = "";
+
+            try {
+                const uploadedUrls = [];
+                for (const file of newFiles) uploadedUrls.push(await uploadToCloudinary(file));
+                const photos = [...keptPhotoUrls, ...uploadedUrls];
+
+                if (editingId) {
+                    await updateDoc(doc(db, "reviews", editingId), {
+                        name, text, photos, passwordHash: editingHash, deleted: false
+                    });
+                } else {
+                    const passwordHash = await hashPassword(passwordInput.value.trim());
+                    await addDoc(collection(db, "reviews"), {
+                        name, text, photos, passwordHash, deleted: false, createdAt: serverTimestamp()
+                    });
+                }
+
+                closeWriteBox();
+                loadReviews();
+            } catch (err) {
+                console.error(err);
+                msgBox.textContent = "저장 중 오류가 발생했어요. 잠시 후 다시 시도해주세요.";
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = editingId ? "수정 완료" : "후기 등록하기";
+            }
+        });
+
+        function escapeHtml(str) {
+            const div = document.createElement("div");
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function renderCard(id, data) {
+            const card = document.createElement("div");
+            card.className = "review_card";
+
+            let photosHtml = "";
+            if (data.photos && data.photos.length > 0) {
+                photosHtml = `<div class="review_card_photos">${data.photos.map(url => `<img src="${url}" alt="">`).join("")}</div>`;
+            }
+            const date = data.createdAt?.toDate ? data.createdAt.toDate().toLocaleDateString("ko-KR") : "";
+
+            card.innerHTML = `
+                ${photosHtml}
+                <div class="review_card_body">
+                    <div class="review_card_top">
+                        <span class="review_card_name">${escapeHtml(data.name)}</span>
+                        <span class="review_card_date">${date}</span>
+                    </div>
+                    <p class="review_card_text">${escapeHtml(data.text)}</p>
+                    <div class="review_card_actions">
+                        <button type="button" class="review_edit_btn" data-id="${id}">수정</button>
+                        <button type="button" class="review_delete_btn" data-id="${id}">삭제</button>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        listBox.addEventListener("click", async (e) => {
+            if (e.target.classList.contains("review_edit_btn")) {
+                await tryEdit(e.target.dataset.id);
+            } else if (e.target.classList.contains("review_delete_btn")) {
+                await tryDelete(e.target.dataset.id);
+            }
+        });
+
+        async function tryEdit(id) {
+            const data = reviewCache[id];
+            if (!data) return;
+            const pw = prompt("이 후기의 비밀번호를 입력해주세요.");
+            if (pw === null) return;
+            const hash = await hashPassword(pw.trim());
+            if (hash !== data.passwordHash) {
+                alert("비밀번호가 틀렸어요.");
+                return;
+            }
+
+            editingId = id;
+            editingHash = hash;
+            newFiles = [];
+            keptPhotoUrls = [...(data.photos || [])];
+            nameInput.value = data.name;
+            textInput.value = data.text;
+            passwordInput.value = "";
+            passwordInput.style.display = "none";
+            renderPhotoPreview();
+            writeTitle.textContent = "후기 수정하기";
+            submitBtn.textContent = "수정 완료";
+            openWriteBox();
+        }
+
+        async function tryDelete(id) {
+            const data = reviewCache[id];
+            if (!data) return;
+            const pw = prompt("이 후기의 비밀번호를 입력해주세요.");
+            if (pw === null) return;
+            const hash = await hashPassword(pw.trim());
+            if (hash !== data.passwordHash) {
+                alert("비밀번호가 틀렸어요.");
+                return;
+            }
+            if (!confirm("이 후기를 삭제할까요?")) return;
+
+            try {
+                await updateDoc(doc(db, "reviews", id), { deleted: true, passwordHash: hash });
+                loadReviews();
+            } catch (err) {
+                console.error(err);
+                alert("삭제 중 오류가 발생했어요.");
+            }
+        }
+
+        async function loadReviews() {
+            loadingBox.style.display = "flex";
+            emptyBox.style.display = "none";
+            listBox.innerHTML = "";
+            reviewCache = {};
+
+            try {
+                const q = query(
+                    collection(db, "reviews"),
+                    where("deleted", "==", false),
+                    orderBy("createdAt", "desc"),
+                    limit(50)
+                );
+                const snap = await getDocs(q);
+
+                if (snap.empty) {
+                    emptyBox.style.display = "block";
+                } else {
+                    snap.forEach(docSnap => {
+                        const data = docSnap.data();
+                        reviewCache[docSnap.id] = data;
+                        listBox.appendChild(renderCard(docSnap.id, data));
+                    });
+                }
+            } catch (err) {
+                console.error(err);
+                listBox.innerHTML = "<p>후기를 불러오지 못했습니다.</p>";
+            } finally {
+                loadingBox.style.display = "none";
+            }
+        }
+
+        loadReviews();
+    </script>
+</body>
+
+</html>

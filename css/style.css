@@ -203,7 +203,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 .sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_section_inbox_title {font-size: 24px; color: #ca7e89; text-align: center; margin-bottom: 10px;}
 .sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_section_inbox_title .s3left {margin-right: 10px;}
 .sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_section_inbox_title .s3right {margin-left: 10px;}
-.sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px;}
+.sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px; border-radius: 5px;}
 .sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_section {font-size: 20px; font-family: 'GounBatang'; line-height: 170%; color: #5B5B5B; text-align: center; margin-top: 15px; margin-bottom: 50px;}
 
 .sub1 section .sub1_section1 .sub1_section_inbox_photo {font-size: 0;}
@@ -271,7 +271,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 .sub2 section .sub2_section1 .sub2_section_box .sub2_section_inbox .sub2_section_inbox_title {font-size: 24px; color: #ca7e89; text-align: center; margin-bottom: 10px;}
 .sub2 section .sub2_section1 .sub2_section_box .sub2_section_inbox .sub2_section_inbox_title .s3left {margin-right: 10px;}
 .sub2 section .sub2_section1 .sub2_section_box .sub2_section_inbox .sub2_section_inbox_title .s3right {margin-left: 10px;}
-.sub2 section .sub2_section1 .sub2_section_box .sub2_section_inbox .sub2_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px; margin-bottom: 50px;}
+.sub2 section .sub2_section1 .sub2_section_box .sub2_section_inbox .sub2_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px; margin-bottom: 50px; border-radius: 5px;}
 
 .sub2 section .sub2_section1 .sub2_section_photobox {width: 1130px; height: 4894px; margin: 0 auto; margin-bottom: 200px;}
 .sub2 section .sub2_section1 .sub2_section_photobox .sub2_photobox {display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 0;}
@@ -665,4 +665,104 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
 }
 .review_more_btn .plus {
     font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sub5 css */
+.sub5 section {margin: 0 auto; margin-top: 130px;}
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox .sub5_section_inbox_title {font-size: 24px; color: #ca7e89; text-align: center; margin-bottom: 10px;}
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox .sub5_section_inbox_title .s3left {margin-right: 10px;}
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox .sub5_section_inbox_title .s3right {margin-left: 10px;}
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox .sub5_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px; border-radius: 5px;}
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox .sub5_section {font-size: 20px; font-family: 'GounBatang'; line-height: 170%; color: #5B5B5B; text-align: center; margin-top: 15px;}
+
+/* 전체 영역 */
+.review_list_section {width: 1120px; margin: 60px auto 200px;}
+.review_board {background: #FBF4F5; border-radius: 5px; padding: 50px 60px; box-sizing: border-box;}
+
+/* 상단 타이틀 + 글쓰기 버튼 */
+.review_list_header {display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;}
+.review_list_title {font-size: 20px; color: #B3626E; font-weight: bold;}
+.write_toggle_btn {background: #CA7E89; color: #fff; border: none; border-radius: 50px; padding: 10px 22px; font-size: 15px; font-family: inherit; cursor: pointer; transition: background 0.2s;}
+.write_toggle_btn:hover {background: #B3626E;}
+
+/* 글쓰기 폼 */
+.review_write_box {width: 100%; max-width: 600px; margin: 0 auto 40px; background: #fff; border: 1px solid #EDDFE0; border-radius: 5px; padding: 30px; box-sizing: border-box;}
+.review_write_title {font-size: 18px; color: #B3626E; text-align: center; margin-bottom: 18px;}
+.review_input_name, .review_input_text {width: 100%; border: 1px solid #CA7E89; border-radius: 5px; padding: 12px; font-family: 'GounBatang'; font-size: 15px; color: #414141; background: #fff; box-sizing: border-box;}
+.review_input_name {margin-bottom: 12px;}
+.review_input_text {height: 110px; resize: none; margin-bottom: 12px;}
+.review_photo_label {display: inline-block; font-family: 'GounBatang'; font-size: 14px; color: #B3626E; margin-bottom: 8px; cursor: pointer;}
+.review_photo_input {display: block; margin-bottom: 12px; font-size: 13px;}
+.review_photo_preview {display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;}
+.photo_thumb {position: relative; width: 70px; height: 70px;}
+.photo_thumb img {width: 100%; height: 100%; object-fit: cover; border-radius: 5px; border: 1px solid #CA7E89;}
+.photo_remove {position: absolute; top: -6px; right: -6px; width: 20px; height: 20px; border-radius: 50%; background: #B3626E; color: #fff; border: none; font-size: 12px; line-height: 20px; cursor: pointer;}
+.review_write_btns {display: flex; gap: 10px;}
+.review_cancel_btn {flex: 1; height: 46px; background: #fff; color: #B3626E; border: 1px solid #CA7E89; border-radius: 50px; font-size: 15px; font-family: inherit; cursor: pointer;}
+.review_submit_btn {flex: 2; height: 46px; background: #CA7E89; color: #fff; border: none; border-radius: 50px; font-size: 16px; font-family: inherit; cursor: pointer; transition: background 0.2s;}
+.review_submit_btn:hover {background: #B3626E;}
+.review_submit_btn:disabled {opacity: 0.6; cursor: default;}
+.review_msg {text-align: center; font-family: 'GounBatang'; font-size: 14px; color: #B3626E; margin-top: 10px; min-height: 18px;}
+
+/* 로딩 상태 */
+.review_loading {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; font-family: 'GounBatang'; color: #B3626E; padding: 70px 0;}
+.loading_spinner {width: 28px; height: 28px; border: 3px solid #EDDFE0; border-top-color: #CA7E89; border-radius: 50%; animation: spin 0.8s linear infinite;}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* 후기 없을 때 */
+.review_empty {text-align: center; font-family: 'GounBatang'; color: #987070; line-height: 170%; padding: 60px 0;}
+.empty_icon {font-size: 32px; margin-bottom: 12px;}
+
+/* 후기 카드 목록 */
+.review_list {display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}
+.review_card {background: #fff; border: 1px solid #EDDFE0; border-radius: 5px; overflow: hidden;}
+.review_card_photos {display: flex; overflow-x: auto;}
+.review_card_photos img {width: 100%; height: 200px; object-fit: cover; flex-shrink: 0;}
+.review_card_body {padding: 16px;}
+.review_card_top {display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;}
+.review_card_name {font-size: 15px; color: #C46F7B; font-weight: bold;}
+.review_card_date {font-family: 'GounBatang'; font-size: 12px; color: #987070;}
+.review_card_text {font-family: 'GounBatang'; font-size: 14px; line-height: 160%; color: #414141; white-space: pre-line;}
+.review_card_actions {display: flex; gap: 8px; margin-top: 12px;}
+.review_edit_btn, .review_delete_btn {font-size: 12px; border: 1px solid #CA7E89; background: #fff; color: #B3626E; border-radius: 50px; padding: 4px 12px; cursor: pointer; font-family: inherit;}
+.review_delete_btn:hover {background: #B3626E; color: #fff;}
+.review_edit_btn:hover {background: #CA7E89; color: #fff;}
+
+@media screen and (max-width: 724px) {
+    .review_list_section {width: 90%;}
+    .review_board {padding: 30px 20px;}
+    .review_write_box {padding: 20px;}
+    .review_list {grid-template-columns: 1fr;}
+    .review_list_header {flex-direction: column; align-items: flex-start; gap: 12px;}
 }
