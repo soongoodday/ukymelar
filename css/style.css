@@ -104,6 +104,14 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .arrow_b
 /* inbox1 */
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 {width: 360px;}
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_pic {font-size: 0;}
+/* 후기 사진 크기 고정 (실제 업로드 사진이 커도 깨지지 않게) */
+.section3_inbox_section .sec3_inbox1_pic img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_section {background: #CA7E89; padding: 15px 20px; border-radius: 0 0 5px 5px;}
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_section .sec3_inbox1_title {font-size: 20px; text-align: center; line-height: 20px; color: #fff;}
 section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_inbox1 .sec3_inbox1_section .sec3_inbox1_title img {margin-left: 5px;}
@@ -766,3 +774,35 @@ section .section3 .section3_box .section3_inbox .section3_inbox_section .sec3_in
     .review_list {grid-template-columns: 1fr;}
     .review_list_header {flex-direction: column; align-items: flex-start; gap: 12px;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 메인화면 - 후기 없을 때 */
+.home_review_empty {display: none; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px; text-align: center;}
+.home_review_empty_icon {font-size: 36px; margin-bottom: 16px;}
+.home_review_empty_text {font-family: 'GounBatang'; font-size: 18px; line-height: 170%; color: #B3626E; margin-bottom: 24px;}
+.home_review_empty_btn {display: inline-block; background: #CA7E89; color: #fff; padding: 14px 32px; border-radius: 50px; font-size: 16px; transition: background 0.2s;}
+.home_review_empty_btn:hover {background: #B3626E;}
+
+
+
+
+/* 메인화면 - 빈 자리 안내 카드 */
+.sec3_inbox_placeholder {opacity: 0.55;}
+.sec3_inbox_placeholder .sec3_inbox1_pic img {filter: grayscale(40%);}
+.sec3_inbox_placeholder .sec3_inbox1_title {font-style: italic;}
+
+
+
+
+.sec3_inbox1, .sec3_inbox2, .sec3_inbox3 {display: block; cursor: pointer;}

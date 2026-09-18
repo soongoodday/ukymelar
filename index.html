@@ -28,11 +28,10 @@
                     </li>
 
                     <li>
-                        <a href="index.html"><img src="images/ukymelar_menu_object_left.png" alt="">
+                        <a href="sub1.html"><img src="images/ukymelar_menu_object_left.png" alt="">
                             ukymelar<img src="images/ukymelar_menu_object_right.png" alt=""></a>
 
                         <ul class="lnb">
-                            <li><a href="index.html">유키멜라 홈</a></li>
                             <li><a href="sub1.html">유키멜라 소개</a></li>
                         </ul>
                     </li>
@@ -170,58 +169,50 @@
                                 alt=""></span>고객님들의 소중한 후기<span class="s3right"><img
                                 src="images/section_object_right.png" alt=""></span></div>
 
-                    <div class="section3_inbox_section">
+                    <div class="section3_inbox_section" id="homeReviewSection">
 
-                        <!-- <div class="arrow_box">
-                            <div class="section3_arrow_left"><a href="#"><img src="images/section3_arrow_left.png"
-                                        alt=""></a></div>
-                            <div class="section3_arrow_right"><a href="#"><img src="images/section3_arrow_right.png"
-                                        alt=""></a></div>
-                        </div> -->
-
-                        <div class="sec3_inbox1">
-                            <div class="sec3_inbox1_pic"><img src="images/wedding2.png" alt=""></div>
+                        <a href="sub5.html" class="sec3_inbox1">
+                            <div class="sec3_inbox1_pic"><img id="home_review_pic1" src="images/wedding2.png" alt="">
+                            </div>
                             <div class="sec3_inbox1_section">
-                                <div class="sec3_inbox1_title">땅이똘이님<img src="images/section3_title_object.png" alt="">
+                                <div class="sec3_inbox1_title"><span id="home_review_name1"></span><img
+                                        src="images/section3_title_object.png" alt="">
                                 </div>
-                                <div class="sec3_inbox1_sec">소중한 반려견과 함께 웨딩사진을 찍었습니다.<br> 작가님께서 너무 친절하시고 잘 이끌어주셔서<br>
-                                    예쁘고 귀여운 사진 많이 얻어갑니다!</div>
+                                <div class="sec3_inbox1_sec" id="home_review_text1"></div>
                             </div>
-                        </div>
+                        </a>
 
-
-                        <div class="sec3_inbox2">
-                            <div class="sec3_inbox1_pic"><img src="images/wedding1.png" alt=""></div>
-                            <div class="sec3_inbox1_section">
-                                <div class="sec3_inbox1_title">발랄한 예비신부님<img src="images/section3_title_object2.png"
-                                        alt=""></div>
-                                <div class="sec3_inbox1_sec">작가님께서 여러가지 포즈를 제안해주신 덕에<br>
-                                    좋은 사진들 나올 수 있었습니다. 다음에도 또<br>
-                                    방문하고 싶어요. 감사합니다.</div>
+                        <a href="sub5.html" class="sec3_inbox2">
+                            <div class="sec3_inbox1_pic"><img id="home_review_pic2" src="images/wedding1.png" alt="">
                             </div>
-                        </div>
-
-
-
-                        <div class="sec3_inbox3">
-                            <div class="sec3_inbox1_pic"><img src="images/wedding3.png" alt=""></div>
                             <div class="sec3_inbox1_section">
-                                <div class="sec3_inbox1_title">서율이 엄마<img src="images/section3_title_object.png" alt="">
+                                <div class="sec3_inbox1_title"><span id="home_review_name2"></span><img
+                                        src="images/section3_title_object2.png" alt=""></div>
+                                <div class="sec3_inbox1_sec" id="home_review_text2"></div>
+                            </div>
+                        </a>
+
+                        <a href="sub5.html" class="sec3_inbox3">
+                            <div class="sec3_inbox1_pic"><img id="home_review_pic3" src="images/wedding3.png" alt="">
+                            </div>
+                            <div class="sec3_inbox1_section">
+                                <div class="sec3_inbox1_title"><span id="home_review_name3"></span><img
+                                        src="images/section3_title_object.png" alt="">
                                 </div>
-                                <div class="sec3_inbox1_sec">우리 아이를 정말 예쁘게 담아주셨어요~~ 보정<br>
-                                    도 자연스럽게 해주시고 정말 좋은 추억 남기고<br>
-                                    갑니다 ^^ 또 방문할게요</div>
+                                <div class="sec3_inbox1_sec" id="home_review_text3"></div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+
+                    <div id="homeReviewEmpty" class="home_review_empty" style="display:none;">
+                        <div class="home_review_empty_icon">💌</div>
+                        <div class="home_review_empty_text">아직 등록된 후기가 없어요.<br>첫 손님의 소중한 후기를 기다리고 있어요!</div>
+                        <a href="sub5.html" class="home_review_empty_btn">후기 작성하러 가기</a>
                     </div>
 
                     <div class="review_more_btn">
-                        <a href="#">더 많은 후기 보기 <span class="plus">+</span></a>
+                        <a href="sub5.html">더 많은 후기 보기 <span class="plus">+</span></a>
                     </div>
-
-                    <!-- <div class="section3_pagination">
-                        <div class="pagination_bar"></div>
-                    </div> -->
 
                 </div>
             </div>
@@ -311,6 +302,84 @@
                 }, 250);
             });
         }
+    </script>
+
+    <!-- 메인 화면에 최근 촬영후기 3개 불러오기 -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+        import {
+            getFirestore, collection, getDocs, query, where, orderBy, limit
+        } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAduKfh_51A45q10fSOwBj6RdqUsTaDWHc",
+            authDomain: "ukymelar-bd655.firebaseapp.com",
+            projectId: "ukymelar-bd655",
+            storageBucket: "ukymelar-bd655.firebasestorage.app",
+            messagingSenderId: "782766339016",
+            appId: "1:782766339016:web:e4801428cb6c2fdb4d06fd"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        async function loadHomeReviews() {
+            const sectionEl = document.getElementById("homeReviewSection");
+            const emptyEl = document.getElementById("homeReviewEmpty");
+
+            try {
+                const q = query(
+                    collection(db, "reviews"),
+                    where("deleted", "==", false),
+                    orderBy("createdAt", "desc"),
+                    limit(3)
+                );
+                const snap = await getDocs(q);
+                const reviews = [];
+                snap.forEach(docSnap => reviews.push(docSnap.data()));
+
+                if (reviews.length === 0) {
+                    sectionEl.style.display = "none";
+                    emptyEl.style.display = "flex";
+                    return;
+                }
+
+                sectionEl.style.display = "flex";
+                emptyEl.style.display = "none";
+
+                for (let i = 0; i < 3; i++) {
+                    const nameEl = document.getElementById(`home_review_name${i + 1}`);
+                    const textEl = document.getElementById(`home_review_text${i + 1}`);
+                    const picEl = document.getElementById(`home_review_pic${i + 1}`);
+                    const boxEl = picEl.closest(`.sec3_inbox${i + 1}`);
+
+                    boxEl.style.display = "";
+
+                    if (reviews[i]) {
+                        boxEl.classList.remove("sec3_inbox_placeholder");
+                        nameEl.textContent = reviews[i].name;
+                        textEl.textContent = reviews[i].text;
+                        if (reviews[i].photos && reviews[i].photos.length > 0) {
+                            picEl.src = reviews[i].photos[0];
+                        } else {
+                            picEl.src = "images/wedding1.png";
+                        }
+                    } else {
+                        // 빈 자리는 "기다리는 카드"로 표시
+                        boxEl.classList.add("sec3_inbox_placeholder");
+                        nameEl.textContent = "당신의 이야기";
+                        textEl.textContent = "다음 후기의 주인공이 되어주세요 :)";
+                        picEl.src = "images/wedding1.png";
+                    }
+                }
+            } catch (err) {
+                console.error(err);
+                sectionEl.style.display = "none";
+                emptyEl.style.display = "flex";
+            }
+        }
+
+        loadHomeReviews();
     </script>
 </body>
 
