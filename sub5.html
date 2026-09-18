@@ -25,10 +25,9 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html"><img src="images/ukymelar_menu_object_left.png" alt="">
+                        <a href="sub1.html"><img src="images/ukymelar_menu_object_left.png" alt="">
                             ukymelar<img src="images/ukymelar_menu_object_right.png" alt=""></a>
                         <ul class="lnb">
-                            <li><a href="index.html">유키멜라 홈</a></li>
                             <li><a href="sub1.html">유키멜라 소개</a></li>
                         </ul>
                     </li>
@@ -67,23 +66,6 @@
                     <button type="button" id="writeToggleBtn" class="write_toggle_btn">✏️ 후기 작성하기</button>
                 </div>
 
-                <div id="reviewWriteBox" class="review_write_box" style="display:none;">
-                    <div id="reviewWriteTitle" class="review_write_title">후기 남기기</div>
-                    <input type="text" id="reviewName" class="review_input_name" placeholder="이름 (닉네임)" maxlength="20">
-                    <input type="password" id="reviewPassword" class="review_input_name"
-                        placeholder="비밀번호 (수정·삭제 시 필요, 4자리 이상)" maxlength="20">
-                    <textarea id="reviewText" class="review_input_text" placeholder="촬영 후기를 자유롭게 남겨주세요 :)"
-                        maxlength="500"></textarea>
-                    <label for="reviewPhotos" class="review_photo_label">📷 사진 첨부 (최대 5장)</label>
-                    <input type="file" id="reviewPhotos" accept="image/*" multiple class="review_photo_input">
-                    <div id="photoPreview" class="review_photo_preview"></div>
-                    <div class="review_write_btns">
-                        <button type="button" id="reviewCancelBtn" class="review_cancel_btn">취소</button>
-                        <button type="button" id="reviewSubmitBtn" class="review_submit_btn">후기 등록하기</button>
-                    </div>
-                    <div id="reviewMsg" class="review_msg"></div>
-                </div>
-
                 <div id="reviewLoading" class="review_loading">
                     <div class="loading_spinner"></div>
                     후기를 불러오고 있어요
@@ -102,7 +84,8 @@
         <div class="footer_box">
             <div class="footer_inbox">
                 <h1><img src="images/ukymelar_logo_white.png" alt=""></h1>
-                <p>Copyright ⓒ ukymelar. All rights reserved.
+                <p>개인정보관리책임자: 성경은(soongoodday@gmail.com)<br>
+                    Copyright ⓒ ukymelar. All rights reserved.
                 </p>
             </div>
             <div class="footer_inbox2">
@@ -117,6 +100,45 @@
             </div>
         </div>
     </footer>
+
+    <!-- 글쓰기/수정 모달 -->
+    <div id="writeModalOverlay" class="review_modal_overlay" style="display:none;">
+        <div class="review_write_box">
+            <button type="button" id="writeModalCloseX" class="review_modal_close">×</button>
+            <div id="reviewWriteTitle" class="review_write_title">후기 남기기</div>
+            <input type="text" id="reviewName" class="review_input_name" placeholder="이름 (닉네임)" maxlength="20">
+            <input type="password" id="reviewPassword" class="review_input_name" placeholder="비밀번호 (수정·삭제 시 필요, 4자리 이상)"
+                maxlength="20">
+            <textarea id="reviewText" class="review_input_text" placeholder="촬영 후기를 자유롭게 남겨주세요 :)"
+                maxlength="500"></textarea>
+            <div id="charCount" class="review_char_count">0 / 500자</div>
+            <label for="reviewPhotos" class="review_photo_label">📷 사진 첨부 (최대 5장)</label>
+            <input type="file" id="reviewPhotos" accept="image/*" multiple class="review_photo_input">
+            <div id="photoPreview" class="review_photo_preview"></div>
+            <div class="review_write_btns">
+                <button type="button" id="reviewCancelBtn" class="review_cancel_btn">취소</button>
+                <button type="button" id="reviewSubmitBtn" class="review_submit_btn">후기 등록하기</button>
+            </div>
+            <div id="reviewMsg" class="review_msg"></div>
+        </div>
+    </div>
+
+    <!-- 상세보기 모달 -->
+    <div id="detailModalOverlay" class="review_modal_overlay" style="display:none;">
+        <div class="review_detail_box">
+            <button type="button" id="detailModalCloseX" class="review_modal_close">×</button>
+            <div class="review_detail_top">
+                <span id="detailName" class="review_card_name"></span>
+                <span id="detailDate" class="review_card_date"></span>
+            </div>
+            <div id="detailPhotos" class="review_detail_photos"></div>
+            <p id="detailText" class="review_detail_text"></p>
+            <div class="review_detail_actions">
+                <button type="button" id="detailEditBtn" class="review_edit_btn">수정</button>
+                <button type="button" id="detailDeleteBtn" class="review_delete_btn">삭제</button>
+            </div>
+        </div>
+    </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
@@ -136,6 +158,7 @@
         const CLOUDINARY_CLOUD_NAME = "dxknnm6n";
         const CLOUDINARY_UPLOAD_PRESET = "ukymelar_review";
 
+
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
 
@@ -146,11 +169,13 @@
         }
 
         const writeToggleBtn = document.getElementById("writeToggleBtn");
-        const writeBox = document.getElementById("reviewWriteBox");
+        const writeModalOverlay = document.getElementById("writeModalOverlay");
+        const writeModalCloseX = document.getElementById("writeModalCloseX");
         const writeTitle = document.getElementById("reviewWriteTitle");
         const nameInput = document.getElementById("reviewName");
         const passwordInput = document.getElementById("reviewPassword");
         const textInput = document.getElementById("reviewText");
+        const charCount = document.getElementById("charCount");
         const photoInput = document.getElementById("reviewPhotos");
         const photoPreview = document.getElementById("photoPreview");
         const submitBtn = document.getElementById("reviewSubmitBtn");
@@ -160,27 +185,38 @@
         const loadingBox = document.getElementById("reviewLoading");
         const emptyBox = document.getElementById("reviewEmpty");
 
+        const detailModalOverlay = document.getElementById("detailModalOverlay");
+        const detailModalCloseX = document.getElementById("detailModalCloseX");
+        const detailName = document.getElementById("detailName");
+        const detailDate = document.getElementById("detailDate");
+        const detailPhotos = document.getElementById("detailPhotos");
+        const detailText = document.getElementById("detailText");
+        const detailEditBtn = document.getElementById("detailEditBtn");
+        const detailDeleteBtn = document.getElementById("detailDeleteBtn");
+
         const MAX_PHOTOS = 5;
         let newFiles = [];
         let keptPhotoUrls = [];
         let editingId = null;
         let editingHash = null;
+        let currentDetailId = null;
         let reviewCache = {};
 
-        writeToggleBtn.addEventListener("click", () => {
-            if (writeBox.style.display === "block") closeWriteBox();
-            else openWriteBox();
+        // ---- 글쓰기 모달 ----
+        writeToggleBtn.addEventListener("click", openWriteModal);
+        writeModalCloseX.addEventListener("click", closeWriteModal);
+        cancelBtn.addEventListener("click", closeWriteModal);
+        writeModalOverlay.addEventListener("click", (e) => {
+            if (e.target === writeModalOverlay) closeWriteModal();
         });
-        cancelBtn.addEventListener("click", closeWriteBox);
 
-        function openWriteBox() {
-            writeBox.style.display = "block";
-            writeToggleBtn.textContent = "닫기";
-            writeBox.scrollIntoView({ behavior: "smooth", block: "start" });
+        function openWriteModal() {
+            writeModalOverlay.style.display = "flex";
+            document.body.style.overflow = "hidden";
         }
-        function closeWriteBox() {
-            writeBox.style.display = "none";
-            writeToggleBtn.textContent = "✏️ 후기 작성하기";
+        function closeWriteModal() {
+            writeModalOverlay.style.display = "none";
+            document.body.style.overflow = "";
             resetForm();
         }
         function resetForm() {
@@ -192,12 +228,17 @@
             passwordInput.value = "";
             passwordInput.style.display = "block";
             textInput.value = "";
+            charCount.textContent = "0 / 500자";
             photoInput.value = "";
             photoPreview.innerHTML = "";
             msgBox.textContent = "";
             writeTitle.textContent = "후기 남기기";
             submitBtn.textContent = "후기 등록하기";
         }
+
+        textInput.addEventListener("input", () => {
+            charCount.textContent = `${textInput.value.length} / 500자`;
+        });
 
         photoInput.addEventListener("change", () => {
             const room = MAX_PHOTOS - keptPhotoUrls.length;
@@ -287,7 +328,7 @@
                     });
                 }
 
-                closeWriteBox();
+                closeWriteModal();
                 loadReviews();
             } catch (err) {
                 console.error(err);
@@ -304,41 +345,93 @@
             return div.innerHTML;
         }
 
+        // ---- 목록 (리스트형) ----
         function renderCard(id, data) {
             const card = document.createElement("div");
             card.className = "review_card";
+            card.dataset.id = id;
 
-            let photosHtml = "";
-            if (data.photos && data.photos.length > 0) {
-                photosHtml = `<div class="review_card_photos">${data.photos.map(url => `<img src="${url}" alt="">`).join("")}</div>`;
-            }
+            const thumbHtml = (data.photos && data.photos.length > 0)
+                ? `<div class="review_card_thumb"><img src="${data.photos[0]}" alt=""></div>`
+                : `<div class="review_card_thumb no_photo">🤍</div>`;
+
             const date = data.createdAt?.toDate ? data.createdAt.toDate().toLocaleDateString("ko-KR") : "";
 
             card.innerHTML = `
-                ${photosHtml}
-                <div class="review_card_body">
-                    <div class="review_card_top">
-                        <span class="review_card_name">${escapeHtml(data.name)}</span>
-                        <span class="review_card_date">${date}</span>
-                    </div>
-                    <p class="review_card_text">${escapeHtml(data.text)}</p>
-                    <div class="review_card_actions">
-                        <button type="button" class="review_edit_btn" data-id="${id}">수정</button>
-                        <button type="button" class="review_delete_btn" data-id="${id}">삭제</button>
-                    </div>
+        ${thumbHtml}
+        <div class="review_card_body">
+            <div class="review_card_top">
+                <div class="review_card_top_left">
+                    <span class="review_card_name">${escapeHtml(data.name)}</span>
+                    <span class="review_card_date">${date}</span>
                 </div>
-            `;
+                <div class="review_card_actions">
+                    <button type="button" class="review_edit_btn" data-id="${id}">수정</button>
+                    <button type="button" class="review_delete_btn" data-id="${id}">삭제</button>
+                </div>
+            </div>
+            <p class="review_card_text">${escapeHtml(data.text)}</p>
+        </div>
+    `;
             return card;
         }
 
         listBox.addEventListener("click", async (e) => {
             if (e.target.classList.contains("review_edit_btn")) {
                 await tryEdit(e.target.dataset.id);
-            } else if (e.target.classList.contains("review_delete_btn")) {
-                await tryDelete(e.target.dataset.id);
+                return;
             }
+            if (e.target.classList.contains("review_delete_btn")) {
+                await tryDelete(e.target.dataset.id);
+                return;
+            }
+            const cardEl = e.target.closest(".review_card");
+            if (cardEl) openDetail(cardEl.dataset.id);
         });
 
+        // ---- 상세보기 모달 ----
+        function openDetail(id) {
+            const data = reviewCache[id];
+            if (!data) return;
+            currentDetailId = id;
+
+            detailName.textContent = data.name;
+            detailDate.textContent = data.createdAt?.toDate ? data.createdAt.toDate().toLocaleDateString("ko-KR") : "";
+            detailText.textContent = data.text;
+
+            detailPhotos.innerHTML = "";
+            if (data.photos && data.photos.length > 0) {
+                data.photos.forEach(url => {
+                    const img = document.createElement("img");
+                    img.src = url;
+                    detailPhotos.appendChild(img);
+                });
+            }
+
+            detailModalOverlay.style.display = "flex";
+            document.body.style.overflow = "hidden";
+        }
+        function closeDetail() {
+            detailModalOverlay.style.display = "none";
+            document.body.style.overflow = "";
+            currentDetailId = null;
+        }
+        detailModalCloseX.addEventListener("click", closeDetail);
+        detailModalOverlay.addEventListener("click", (e) => {
+            if (e.target === detailModalOverlay) closeDetail();
+        });
+        detailEditBtn.addEventListener("click", async () => {
+            const id = currentDetailId;
+            closeDetail();
+            await tryEdit(id);
+        });
+        detailDeleteBtn.addEventListener("click", async () => {
+            const id = currentDetailId;
+            await tryDelete(id);
+            if (!reviewCache[id]) closeDetail();
+        });
+
+        // ---- 수정/삭제 (비밀번호 확인 후 바로 실행) ----
         async function tryEdit(id) {
             const data = reviewCache[id];
             if (!data) return;
@@ -356,12 +449,13 @@
             keptPhotoUrls = [...(data.photos || [])];
             nameInput.value = data.name;
             textInput.value = data.text;
+            charCount.textContent = `${data.text.length} / 500자`;
             passwordInput.value = "";
             passwordInput.style.display = "none";
             renderPhotoPreview();
             writeTitle.textContent = "후기 수정하기";
             submitBtn.textContent = "수정 완료";
-            openWriteBox();
+            openWriteModal();
         }
 
         async function tryDelete(id) {

@@ -28,7 +28,7 @@
                     </li>
 
                     <li>
-                        <a href="sub1.html"><img src="images/ukymelar_menu_object_left.png" alt="">
+                        <a href="index.html"><img src="images/ukymelar_menu_object_left.png" alt="">
                             ukymelar<img src="images/ukymelar_menu_object_right.png" alt=""></a>
 
                         <ul class="lnb">
@@ -169,37 +169,32 @@
                                 alt=""></span>고객님들의 소중한 후기<span class="s3right"><img
                                 src="images/section_object_right.png" alt=""></span></div>
 
-                    <div class="section3_inbox_section" id="homeReviewSection">
+                    <div class="home_review_list" id="homeReviewSection">
 
-                        <a href="sub5.html" class="sec3_inbox1">
-                            <div class="sec3_inbox1_pic"><img id="home_review_pic1" src="images/wedding2.png" alt="">
+                        <a href="sub5.html" class="home_review_card" id="home_review_card1">
+                            <div class="home_review_thumb"><img id="home_review_pic1" src="images/wedding2.png" alt="">
                             </div>
-                            <div class="sec3_inbox1_section">
-                                <div class="sec3_inbox1_title"><span id="home_review_name1"></span><img
-                                        src="images/section3_title_object.png" alt="">
-                                </div>
-                                <div class="sec3_inbox1_sec" id="home_review_text1"></div>
+                            <div class="home_review_body">
+                                <div class="home_review_name" id="home_review_name1"></div>
+                                <p class="home_review_text" id="home_review_text1"></p>
                             </div>
                         </a>
 
-                        <a href="sub5.html" class="sec3_inbox2">
-                            <div class="sec3_inbox1_pic"><img id="home_review_pic2" src="images/wedding1.png" alt="">
+                        <a href="sub5.html" class="home_review_card" id="home_review_card2">
+                            <div class="home_review_thumb"><img id="home_review_pic2" src="images/wedding1.png" alt="">
                             </div>
-                            <div class="sec3_inbox1_section">
-                                <div class="sec3_inbox1_title"><span id="home_review_name2"></span><img
-                                        src="images/section3_title_object2.png" alt=""></div>
-                                <div class="sec3_inbox1_sec" id="home_review_text2"></div>
+                            <div class="home_review_body">
+                                <div class="home_review_name" id="home_review_name2"></div>
+                                <p class="home_review_text" id="home_review_text2"></p>
                             </div>
                         </a>
 
-                        <a href="sub5.html" class="sec3_inbox3">
-                            <div class="sec3_inbox1_pic"><img id="home_review_pic3" src="images/wedding3.png" alt="">
+                        <a href="sub5.html" class="home_review_card" id="home_review_card3">
+                            <div class="home_review_thumb"><img id="home_review_pic3" src="images/wedding3.png" alt="">
                             </div>
-                            <div class="sec3_inbox1_section">
-                                <div class="sec3_inbox1_title"><span id="home_review_name3"></span><img
-                                        src="images/section3_title_object.png" alt="">
-                                </div>
-                                <div class="sec3_inbox1_sec" id="home_review_text3"></div>
+                            <div class="home_review_body">
+                                <div class="home_review_name" id="home_review_name3"></div>
+                                <p class="home_review_text" id="home_review_text3"></p>
                             </div>
                         </a>
                     </div>
@@ -348,15 +343,14 @@
                 emptyEl.style.display = "none";
 
                 for (let i = 0; i < 3; i++) {
+                    const cardEl = document.getElementById(`home_review_card${i + 1}`);
                     const nameEl = document.getElementById(`home_review_name${i + 1}`);
                     const textEl = document.getElementById(`home_review_text${i + 1}`);
                     const picEl = document.getElementById(`home_review_pic${i + 1}`);
-                    const boxEl = picEl.closest(`.sec3_inbox${i + 1}`);
-
-                    boxEl.style.display = "";
 
                     if (reviews[i]) {
-                        boxEl.classList.remove("sec3_inbox_placeholder");
+                        cardEl.style.display = "flex";
+                        cardEl.classList.remove("home_review_placeholder");
                         nameEl.textContent = reviews[i].name;
                         textEl.textContent = reviews[i].text;
                         if (reviews[i].photos && reviews[i].photos.length > 0) {
@@ -365,8 +359,8 @@
                             picEl.src = "images/wedding1.png";
                         }
                     } else {
-                        // 빈 자리는 "기다리는 카드"로 표시
-                        boxEl.classList.add("sec3_inbox_placeholder");
+                        cardEl.style.display = "flex";
+                        cardEl.classList.add("home_review_placeholder");
                         nameEl.textContent = "당신의 이야기";
                         textEl.textContent = "다음 후기의 주인공이 되어주세요 :)";
                         picEl.src = "images/wedding1.png";
