@@ -2,9 +2,9 @@
 @import url(font.css);
 @import url(reset.css);
 @import url(common.css);
-@import url(mobile.css);
 
-
+/* 햄버거 버튼 */
+.menu-btn {display: none;}
 /* 히어로 박스 */
 .hero_box {width: 360px; height: 360px; background: #fff; position: absolute; z-index: 11; top: 35%; left: 65%; border: 1px solid #C46F7B; border-radius: 5px; opacity: 1; transition: opacity 0.25s ease; display: none;}
 .hero_box .hero_inbox {padding: 42px 30px;}
@@ -21,8 +21,8 @@
 .hero_box .hero_inbox .hero_more a {color: #fff;}
 
 /* 히어로 */
-.hero {margin: 0 auto;}
-.hero img {width: 100%; height: 1000px; object-fit: cover; object-position: center;}
+.hero {margin: 0 auto; width: 100%; max-width: 100%;}
+.hero img {width: 100%; max-width: 100%; height: clamp(300px, 70vw, 900px); object-fit: cover; object-position: center;}
 
 /* 섹션 */
 section {}
@@ -31,7 +31,7 @@ section .section1 {}
 /* 섹션1 이펙트 */
 section .section1 .section1_effect {position: absolute; left: 200px; top: 900px;}
 
-section .section1 .section1_box {margin-top: 130px; display: flex; justify-content: center; align-items: center;}
+section .section1 .section1_box {margin-top: 60px; display: flex; justify-content: center; align-items: center;}
 section .section1 .section1_box .section1_pic {}
 section .section1 .section1_box .section1_introduce {width: 370px; height: 506px; display: flex; flex-direction: column; justify-content: center; margin-left: 50px;}
 section .section1 .section1_box .section1_introduce .section1_ukymelar {}
@@ -63,7 +63,7 @@ section .section1 .section1_box .section1_introduce .section1_insta .instagram2 
 
 /* 섹션2 */
 section .section2 {background: #3B3B3B;}
-section .section2 .film1 {margin-top: 130px;}
+section .section2 .film1 {margin-top: 60px;}
 section .section2 .film1 img {width: 100%;}
 section .section2 .film2 img {width: 100%;}
 
@@ -86,7 +86,7 @@ section .section2 .mySwiper2 .swiper-wrapper .swiper-slide img {width: 100%;}
 
 /* 섹션3 */
 section .section3 {}
-section .section3 .section3_box {width: 1638px; height: 690px; background: #FFEFF1; margin: 200px auto; border-radius: 5px; display: flex; justify-content: center; align-items: center;}
+section .section3 .section3_box {width: 100%; height: 690px; background: #FFEFF1; margin: 0 auto; border-radius: 5px; display: flex; justify-content: center; align-items: center;}
 section .section3 .section3_box .section3_inbox {width: 100%; display: flex; flex-direction: column; align-items: center;}
 
 section .section3 .section3_box .section3_inbox .section3_inbox_title {font-size: 24px; color: #ca7e89; text-align: center; margin-bottom: 30px;}
@@ -756,7 +756,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .review_detail_text {font-family: 'GounBatang'; font-size: 17px; line-height: 180%; color: #414141; white-space: pre-line;}
 .review_detail_actions {display: flex; gap: 10px; margin-top: 24px; padding-top: 20px; border-top: 1px solid #EDDFE0;}
 
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 768px) {
     .review_list_section {width: 90%;}
     .review_board {padding: 30px 20px;}
     .review_card {flex-direction: column;}
@@ -793,7 +793,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .home_review_placeholder .home_review_thumb img {filter: grayscale(40%);}
 .home_review_placeholder .home_review_name {font-style: italic;}
 
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 768px) {
     .home_review_list {width: 90%;}
     .home_review_card {padding: 12px 14px;}
     .home_review_thumb {width: 52px; height: 52px;}
