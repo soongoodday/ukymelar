@@ -12,7 +12,7 @@ header .header_box nav {display: none;}
 header .header_box h1 {position: absolute; top: -15px; left: 50%;}
 
 /* 햄버거 버튼 */
-header .menu-btn {display: flex; justify-content: center; align-items: center; width: 32px; height: 32px; display: flex; flex-direction: column; gap: 6px; position: absolute; top: 25px; left: 0; border: 0; background: none; margin-left: 20px; z-index: 99999;}
+header .menu-btn {display: flex; justify-content: center; align-items: center; width: 32px; height: 32px; display: flex; flex-direction: column; gap: 6px; position: absolute; top: 20px; left: 0; border: 0; background: none; margin-left: 20px; z-index: 99999;}
 header .menu-btn span {width: 30px; height: 4px; background: #c46f7b; border-radius: 10%;}
 
 header .menu-btn span {
