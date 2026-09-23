@@ -237,7 +237,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .sub2 section .sub2_section1 .sub2_section_box .sub2_section_inbox .sub2_section_inbox_title .s3right {margin-left: 10px;}
 .sub2 section .sub2_section1 .sub2_section_box .sub2_section_inbox .sub2_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px; margin-bottom: 50px; border-radius: 5px;}
 
-.sub2 section .sub2_section1 .sub2_section_photobox {width: 1130px; height: 4894px; margin: 0 auto; margin-bottom: 200px;}
+.sub2 section .sub2_section1 .sub2_section_photobox {width: 1130px; height: auto; margin: 0 auto; margin-bottom: 200px;}
 .sub2 section .sub2_section1 .sub2_section_photobox .sub2_photobox {display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 0;}
 .sub2 section .sub2_section1 .sub2_section_photobox .sub2_photobox li {}
 .sub2 section .sub2_section1 .sub2_section_photobox .sub2_photobox li img {}
@@ -304,7 +304,8 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .sub3 section .sub3_section1 .sub3_section_box .sub3_section_inbox .sub3_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px; margin-bottom: 50px; border-radius: 5px;}
 
 
-.sub3 section .sub3_section1 .sub3_section_pricebox .sub3_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 156px; left: 20px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox {position: relative;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .sub3_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: absolute; top: 156px; left: 20px;}
 
 .sub3 section .sub3_section1 .sub3_section_pricebox {width: 1120px; height: 828px; margin: 0 auto;}
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_title {width: 1120px; height: 50px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 50px; font-size: 22px; color: #fff; margin-bottom: 20px; border-radius: 5px;}
@@ -377,11 +378,11 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_hair .eventbox_title {font-size: 22px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; width: 560px; height: 50px; line-height: 50px; margin-top: 20px; margin-bottom: 20px;}
 
 
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section {}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 94px; left: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line2 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 220px; left: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line3 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 380px; left: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 94px; left: 590px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section {position: relative;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line {width: 570px; height: 1px; background: #ca7e89; position: absolute; top: 94px; left: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line2 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 220px; left: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line3 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 380px; left: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 94px; left: 590px; bd}
 
 
 
@@ -422,9 +423,9 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .sub3 section .sub3_section2-1 .pricebox_company .pricebox_hair .eventbox_title {font-size: 22px; color: #B3626E; text-align: center; border-top: 1px solid #CA7E89; border-bottom: 1px solid #CA7E89; line-height: 22px; width: 560px;}
 
 
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section {}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 120px; left: 20px;}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: relative; top: 120px; left: 580px;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section {position: relative;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 120px; left: 20px;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 120px; left: 580px;}
 
 
 
@@ -513,8 +514,8 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .sub4 section .sub4_section1 .sub4_section_box .sub4_section_inbox .sub4_section_inbox_title .s3right {margin-left: 10px;}
 .sub4 section .sub4_section1 .sub4_section_box .sub4_section_inbox .sub4_button {width: 220px; height: 32px; background: #ca7e89; color: #fff; text-align: center; line-height: 32px; font-size: 20px; margin-bottom: 50px; border-radius: 5px;}
 
-
-.sub4 section .sub4_section1 .sub4_section_pricebox .sub4_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 155px; left: 20px;}
+.sub4 section .sub4_section1 .sub4_section_pricebox {position: relative;}
+.sub4 section .sub4_section1 .sub4_section_pricebox .sub4_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: absolute; top: 155px; left: 20px;}
 
 .sub4 section .sub4_section1 .sub4_section_pricebox {width: 1120px; margin: 0 auto;}
 .sub4 section .sub4_section1 .sub4_section_pricebox .pricebox_title {width: 1120px; height: 50px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 50px; font-size: 22px; color: #fff; margin-bottom: 20px; border-radius: 5px;}
@@ -556,31 +557,31 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 /* 섹션2 */
 .sub4 section .sub4_section2 {width: 1120px; margin: 0 auto; margin-top: 150px;}
 
-.sub4 section .sub4_section2 .sub4_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 220px; left: 20px;}
-.sub4 section .sub4_section2 .sub4_section_pricebox_line2 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 320px; left: 20px;}
-.sub4 section .sub4_section2 .sub4_section_pricebox_line3 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 420px; left: 20px;}
-.sub4 section .sub4_section2 .sub4_section_pricebox_line4 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 520px; left: 20px;}
-.sub4 section .sub4_section2 .sub4_section_pricebox_line5 {width: 1080px; height: 1px; background: #ca7e89; position: relative; top: 620px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line {width: 1080px; height: 1px; background: #ca7e89; position: absolute; top: 100px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line2 {width: 1080px; height: 1px; background: #ca7e89; position: absolute; top: 190px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line3 {width: 1080px; height: 1px; background: #ca7e89; position: absolute; top: 280px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line4 {width: 1080px; height: 1px; background: #ca7e89; position: absolute; top: 370px; left: 20px;}
+.sub4 section .sub4_section2 .sub4_section_pricebox_line5 {width: 1080px; height: 1px; background: #ca7e89; position: absolute; top: 460px; left: 20px;}
 
 .sub4 section .sub4_section2 .sub4_sample {}
 .sub4 section .sub4_section2 .sub4_sample .pricebox_title {width: 1120px; height: 56px; background: #b3626e; margin: 0 auto; text-align: center; line-height: 56px; font-size: 22px; color: #fff; margin-bottom: 20px; border-radius: 5px;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox {width: 1120px; height: 716px; background: #F8F0F1; margin: 0 auto; border-radius: 5px; padding: 30px 0px; display: flex;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox {width: 1120px; height: 700px; background: #F8F0F1; margin: 0 auto; border-radius: 5px; display: flex; position: relative;}
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .samplebox_left {}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .samplebox_left li {font-size: 18px; color: #B3626E; margin-top: 30px; text-indent: 75px; line-height: 70px;}
-
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .samplebox_left li {font-size: 18px; color: #B3626E; margin-top: 20px; text-indent: 75px; line-height: 70px;}
 
 
 
 .sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right {}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(1) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; line-height: 100px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(2) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; line-height: 35px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(3) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; line-height: 100px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(4) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; line-height: 35px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(5) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; line-height: 100px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(6) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; line-height: 35px; padding: 16px 0; color: #B3626E;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(7) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; padding: 0; color: #B3626E; margin-bottom: 10px;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(8) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; padding: 0; color: #B3626E; margin-bottom: 10px;}
-.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(9) {font-family: 'GounBatang'; font-size: 18px; text-indent: 92px; padding: 0; color: #B3626E; margin-bottom: 10px; font-weight: bold;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li {font-size: 16px; color: #B3626E; text-indent: 75px; line-height: 110px;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(1) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(2) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; line-height: 65px; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(3) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; line-height: 115px; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(4) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; line-height: 65px; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(5) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; line-height: 115px; color: #B3626E;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(6) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; line-height: 45px; color: #B3626E; margin-top: 10px;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(7) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; padding: 0; color: #B3626E; line-height: 25px;} 
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(8) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; padding: 0; color: #B3626E; line-height: 50px;}
+.sub4 section .sub4_section2 .sub4_sample .sub4_samplebox .sample_right li:nth-child(9) {font-family: 'GounBatang'; font-size: 16px; text-indent: 92px; padding: 0; color: #B3626E; line-height: 25px; font-weight: bold;}
 
 
 
