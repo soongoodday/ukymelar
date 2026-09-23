@@ -1,0 +1,86 @@
+@media (max-width: 480px) {
+
+section .section1 .section1_box .section1_introduce .section1_ukymelar .ukymelar li:nth-child(1) {font-size: 28px;}
+
+section .section3 .section3_box .section3_inbox .section3_inbox_title {font-size: 20px;}
+
+
+
+
+
+
+
+
+
+
+/* sub1 css */
+.sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_section_inbox_title {font-size: 20px;}
+.sub1 section .sub1_section1 .sub1_section_box .sub1_section_inbox .sub1_section {font-size: 16px;}
+
+footer {}
+footer .footer_box p {display: flex; font-size: 13px;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* sub3 css */
+.sub3 section .sub3_section1 .sub3_section_box .sub3_section_inbox .sub3_section_inbox_title {font-size: 20px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(1) {font-size: 17px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(2) {font-size: 17px; margin-top: 25px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(3) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(4) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(5) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 .simple_snap li:nth-child(6) {font-size: 15px;}
+
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(1) {font-size: 17px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(2) {font-size: 17px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(3) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(4) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(5) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 .simple_snap li:nth-child(6) {font-size: 15px;}
+
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 .simple_snap li:nth-child(1) {font-size: 17px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 .simple_snap li:nth-child(2) {font-size: 17px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 .simple_snap li:nth-child(3) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 .simple_snap li:nth-child(4) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 .simple_snap li:nth-child(5) {font-size: 15px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 .simple_snap li:nth-child(6) {font-size: 15px;}
+
+.sub3 section .sub3_section1 .sub3_section_pricebox .sub3_section_pricebox_line {left: 40px; width: 400px;}
+
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox1 {height: 380px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox2 {height: 380px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 {height: 380px;}
+
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_hair .eventbox_title {font-size: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_title {font-size: 16px;}
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_price {font-size: 20px;}
+
+
+
+/* sub5 css */
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox .sub5_section_inbox_title {font-size: 20px;} 
+.sub5 section .sub5_section1 .sub5_section_box .sub5_section_inbox .sub5_section {font-size: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+}
