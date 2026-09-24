@@ -209,6 +209,16 @@ header.menu-open .header_box nav .gnb li:nth-child(1) { order: 2; }  /* 포트�
 header.menu-open .header_box nav .gnb li:nth-child(2) { order: 1; }  /* ukymelar → 1번째 */
 header.menu-open .header_box nav .gnb li:nth-child(3) { order: 3; }  /* 작업문의 → 3번째 */
 
+/* 1번째 선 → 아래로 내려가며 45도 회전 */
+header .menu-btn.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+/* 3번째 선 → 위로 올라가며 반대 방향 회전 */
+header .menu-btn.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 
 
 /* footer */
