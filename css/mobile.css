@@ -1,5 +1,13 @@
 @media (max-width: 480px) {
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}  
+
+
 section .section1 .section1_box .section1_introduce .section1_ukymelar .ukymelar li:nth-child(1) {font-size: 28px;}
 
 section .section3 .section3_box .section3_inbox .section3_inbox_title {font-size: 20px;}
@@ -61,10 +69,42 @@ footer .footer_box p {display: flex; font-size: 13px;}
 .sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_detailbox .detailbox3 {height: 380px;}
 
 
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_hair .eventbox_title {font-size: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .pricebox_hair .eventbox_title {font-size: 18px;}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_title {font-size: 16px;}
 
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_price {font-size: 20px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair1 .hair1_price {font-size: 18px;}
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_title {font-size: 16px;}
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair2 .hair1_price {font-size: 18px;}
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_title {font-size: 16px;}
+
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_title {font-size: 16px;}
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_price {font-size: 18px; padding: 15px 0;}
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 .hair3 .hair1_price {font-size: 18px;}
+
+
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line {left: 10px; top: 110px; width: 400px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line2 {left: 10px; top: 255px; width: 180px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line3 {left: 10px; top: 425px; width: 180px;}
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section1 {height: 460px;}
+
+
+
+
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line_last {top: 100px; left: 10px; width: 400px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .mood {margin-top: 22px;}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_container .eventbox_section2 .hair1 .hair1_price span {font-size: 16px;}
+.sub3 section .sub3_section1 .sub3_section_pricebox .pricebox_eventbox .eventbox_title {font-size: 18px;}
+.sub3 section .sub3_section2-1 .pricebox_company .pricebox_askbox {font-size: 18px; margin-bottom: 50px;}
+
+
 
 
 

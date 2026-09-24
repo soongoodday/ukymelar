@@ -382,7 +382,7 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line {width: 570px; height: 1px; background: #ca7e89; position: absolute; top: 94px; left: 20px;}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line2 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 220px; left: 20px;}
 .sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line3 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 380px; left: 20px;}
-.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 94px; left: 590px; bd}
+.sub3 section .sub3_section2 .sub3_section_box .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 94px; left: 590px;}
 
 
 
@@ -424,8 +424,8 @@ section .section3 .section3_box .section3_inbox .section3_inbox_title .s3right {
 
 
 .sub3 section .sub3_section2-1 .pricebox_company .eventbox_section {position: relative;}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 120px; left: 20px;}
-.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 120px; left: 580px;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line_last {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 90px; left: 20px;}
+.sub3 section .sub3_section2-1 .pricebox_company .eventbox_section .eventbox_line4 {width: 510px; height: 1px; background: #ca7e89; position: absolute; top: 90px; left: 580px;}
 
 
 
