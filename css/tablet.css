@@ -14,8 +14,8 @@ html, body {
 
 /* hero */
 .hero {box-sizing: border-box;}
-.hero .swiper-wrapper {height: clamp(100px, 50vh, 500px);}
-.hero .swiper-wrapper img {width: 100%; max-width: 100%; height: 100%; object-fit: cover; box-sizing: border-box;}
+.hero .swiper-wrapper {height: auto;}
+.hero .swiper-wrapper img {width: 100%; height: auto; display: block;}
 
 /* section1 */
 section .section1 {width: 100%; max-width: 100%; padding: 0 30px; box-sizing: border-box;}
